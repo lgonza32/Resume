@@ -1,6 +1,6 @@
-PWD c:\Users\laure\Desktop\Imp\for jobs\Resume\New Resume latex
+PWD c:\Users\laure\Desktop\Imp\for jobs\Resume\Resume
 INPUT C:\Users\laure\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\laure\Desktop\Imp\for jobs\Resume\New Resume latex\Resume.tex
+INPUT c:\Users\laure\Desktop\Imp\for jobs\Resume\Resume\Resume.tex
 OUTPUT Resume.log
 INPUT C:\Users\laure\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\laure\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
