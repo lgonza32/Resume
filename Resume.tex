@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Laurenz Luke Gonzales
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEdu}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Laurenz Luke Gonzales} \\ \vspace{1pt}
+    \small +1-984-255-4785 $|$ \href{mailto:laurenzpg@gmail.com}{\underline{laurenzpg@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/laurenzlukegonzales}{\underline{Linkedin: laurenzlukegonzales}} $|$
+    \href{https://github.com/lgonza32}{\underline{GitHub: lgonza32}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEdu
+      {University of North Carolina - Charlotte}{Charlotte, NC}
+      {Bachelor of Science (BS) in Computer Science, Software Engineering}{Graduation Date: May 2022}
+      {Bachelor of Arts (BA) in Japanese Studies}{Graduation Date: May 2022}
+    \small{\item{
+      \textbf{GPA}{: 3.86} \\
+      \textbf{Honors}{: Chancellor's List, Dean's List} \\
+      }}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Coral Reef Restoration Capstone} $|$ \emph{Android Application}}{May 2022}
+          \resumeItemListStart
+            \resumeItem{Worked with a 5-person team to create a coral reef database solution for the Coral Restoration
+            Foundation.}
+            \resumeItem{Applied and used \emph{Java} with the uses of OpenWeather and Meteomatics API to allow
+            researchers out in the field ease-of-access and ease of entry to coral reef data.}
+            \resumeItem{Applied agile practices such as the use of bi-weekly sprints, designing user stories, a lowfidelity prototype, and UML diagrams that include a class and sequence diagram.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Nihon Club Websites} $|$ \emph{Webpage Application}}{December 2021}
+          \resumeItemListStart
+            \resumeItem{Designed two websites on the premise of using the Nihon Club at UNCC as the inspiration.}
+            \resumeItem{Integrated and practiced various web development skills with JavaScript, HTML, CSS, and
+            EJS to develop two different Nihon Club Websites.}
+            \resumeItem{Collaborated with officers of the Nihon Club to implement ideas and features into the website’s
+            development.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Human Resources Employees} $|$ \emph{Database Application}}{July 2021}
+        \resumeItemListStart
+          \resumeItem{}
+          \resumeItem{}
+          \resumeItem{}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Nihon Club Officer $|$ \textmd{\emph{Secretary \& Vice-President}}}{September 2020 -- May 2022}
+      {UNC Charlotte}{Charlotte, NC}
+      \resumeItemListStart
+        \resumeItem{}
+        \resumeItem{}
+        \resumeItem{}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Junior Golf Coach Volunteer}{June 2016 -- June 2018}
+      {The First Tee of the Triangle}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Participated in a professional environment as a junior coach to teach 100+ young
+        first-tee participants core values, healthy habits, and valuable life skills by using golf.}
+        \resumeItem{Collaborated with dozens of First Tee coaches and volunteers in First Tee
+        events and weekly golf classes to create significant-quality relationships with First Tee
+        participants.}
+        \resumeItem{Selected as the junior volunteer of the year in 2017 for the shown impact and dedication
+        to the First Tee of the Triangle chapter and participants around the Triangle.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, Python, SQL (MySQL), HTML/CSS, PHP} \\
+     \textbf{Frameworks}{: Node.js, JUnit, Express, MongoDB} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Git/GitHub, JSON, EJS} \\
+     \textbf{Libraries}{: JQuery, Mongoose} \\
+     \textbf{Certification}{: TestOut Security Pro \hfill{June 2020}} \\
+    }}
+ \end{itemize}
+
+
+%-----------Skills/INTERESTS-----------
+\section{Skills/Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Skills}{: Japanese Language \& Business, Microsoft Office (Word, Excel, PowerPoint), Agile Project Management} \\
+   \textbf{Interests}{: Golf, Japanese Studies, Globalization, Community Building} \\
+  }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
